@@ -56,6 +56,7 @@ ssh usuario@ipRaspberry
 ```bash
 sudo raspi-config
 ```
+ Y aplicaremos los siguientes ajustes:
 ```bash
 1. APARTADO [6 Advanced Options] > [A1 Expand Filesystem] > FINISH
 2. APARTADO [1 System Options] > [S5 Boot / Auto Login] > [B1 Desktop / CLI] > [B4 Desktop Autologin] > FINISH
@@ -68,4 +69,22 @@ sudo raspi-config
 ------------------------------------------------------------------------------------------------------------------------------------------------
 FINISH > REBOOT
 ```
+```bash
+ssh usuario@ipRaspberry # Iniciamos de nuevo sesión por SSH
+```
+</details>
+
+Vamos a configurar una IP estática para la Raspberry Pi, para ello, ejecutaremos el siguiente comando.
+```bash
+sudo nmtui
+```
+
+
+<details>
+<summary>Modificaremos la configuración de la conexión</summary>
+<br>
+
+Seleccionamos la opción de **"Edit a connection"** y seleccionamos la conexión de **"Wired connection 1"**.
+
+<img src="/img/ipManual.png" alt="Texto alternativo" width="100%" />
 </details>
