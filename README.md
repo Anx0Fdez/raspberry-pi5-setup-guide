@@ -85,10 +85,22 @@ sudo nmtui
 <br>
 
 Seleccionamos la opción de **"Edit a connection"** y seleccionamos la conexión de **"Wired connection 1"**.
-- **<u>Dirección IP:</u>** Puedes poner la que quieras, pero asegúrate de que no esté en uso y fuera del rango de direcciones IP asignadas por el router.
-- **<u>Máscara de red:</u>** Pondremos la máscara "/24"
-- **<u>Puerta de enlace:</u>** Pondremos la que se encuentra detrás de nuestro router.
-- **<u>DNS:</u>** Pondremos la de Google "8.8.8.8" y "8.8.4.4"
+- **Dirección IP:** *Puedes poner la que quieras, pero asegúrate de que no esté en uso y fuera del rango de direcciones IP asignadas por el router.*
+- **Máscara de red:** *Pondremos la máscara "**/24**"*
+- **Puerta de enlace:** *Pondremos la que se encuentra detrás de nuestro router.*
+- **DNS:** *Pondremos la de Google "**8.8.8.8**" y "**8.8.4.4**"*
 
 <img src="/img/ipManual.png" alt="Texto alternativo" width="100%" />
+
+Finalmente, seleccionamos la opción de **"Save"** y **"Quit"**, y reiniciamos la Raspberry Pi para aplicar los cambios.
+```bash
+sudo reboot
+ssh usuario@ipRaspberry # Iniciamos de nuevo sesión por SSH con la nueva ip estática
+```
 </details>
+
+**Actualizamos** el sistema operativo con los siguientes comandos. (Se recomienda realizar este tipo de actualizaciones cada cierto tiempo)
+```bash
+sudo apt update
+sudo apt full-upgrade
+```
