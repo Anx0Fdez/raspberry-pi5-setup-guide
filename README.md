@@ -31,7 +31,21 @@ Para comenzar con la instalación de Raspberry Pi OS, instalaremos Raspberry Pi 
 <img src="/img/personalizarSO-servicios.png" alt="Texto alternativo" width="49%" />
 
 5. Finalmente, guardamos la configuración, aplicamos los ajustes y comenzamos la instalación.
-
-
-
 </details>
+
+<details>
+<summary>Acceder a la Raspberry Pi</summary>
+<br>
+Tras conectar la Raspberry Pi a la corriente y a la red mediante un cable ethernet, accederemos a la Raspberry Pi mediante SSH.
+
+1. Para ello, abriremos una terminal y ejecutaremos el siguiente comando para optener la dirección IP de la Raspberry Pi.
+```bash
+ping -4 raspberrypi.local
+```
+2. Una vez obtenida la dirección IP, accederemos mediante SSH con el siguiente comando.
+```bash
+ssh usuario@ipRaspberry
+# Confirmamos la conexión con "yes" y escribimos la contraseña que hemos configurado en la instalación.
+```
+</details>
+
