@@ -85,6 +85,10 @@ sudo nmtui
 <br>
 
 Seleccionamos la opción de **"Edit a connection"** y seleccionamos la conexión de **"Wired connection 1"**.
+- **<u>Dirección IP:</u>** Puedes poner la que quieras, pero asegúrate de que no esté en uso y fuera del rango de direcciones IP asignadas por el router.
+- **<u>Máscara de red:</u>** Pondremos la máscara "/24"
+- **<u>Puerta de enlace:</u>** Pondremos la que se encuentra detrás de nuestro router.
+- **<u>DNS:</u>** Pondremos la de Google "8.8.8.8" y "8.8.4.4"
 
 <img src="/img/ipManual.png" alt="Texto alternativo" width="100%" />
 </details>
