@@ -26,17 +26,17 @@ Para comenzar con la instalación de Raspberry Pi OS, instalaremos Raspberry Pi 
     - En el caso de tener una raspberry pi 5 de 4GB, se recomienda instalar la versión de 32 bits.
 3. Seleccionamos la opción de **"Choose Storage"** y elegimos la tarjeta microSD que vamos a utilizar.
 4. Antes de finalizar la instalar, editaremos los ajustes predeterminados del sistema operativo.
-[!TIP]
-    - **Nombre de Host:** `raspberrypi`
-    - **Usuario:** `pi`
-    - **Contraseña:** `raspberry`
-    - **Habilitar SSH:** `Activado`
-    - **Habilitar VNC:** `Activado`
-    - **Idioma:** `Español`
-    - **Zona Horaria:** `Madrid`
-    - **Teclado:** `Español`
-    - **Wi-Fi:** `Nombre de la red Wi-Fi`
-    - **Contraseña Wi-Fi:** `Contraseña de la red Wi-Fi`
+>[!TIP]
+> - **Nombre de Host:** `raspberrypi`
+> - **Usuario:** `pi`
+> - **Contraseña:** `raspberry`
+> - **Habilitar SSH:** `Activado`
+> - **Habilitar VNC:** `Activado`
+> - **Idioma:** `Español`
+> - **Zona Horaria:** `Madrid`
+> - **Teclado:** `Español`
+> - **Wi-Fi:** `Nombre de la red Wi-Fi`
+> - **Contraseña Wi-Fi:** `Contraseña de la red Wi-Fi`
 
 
 </details>
