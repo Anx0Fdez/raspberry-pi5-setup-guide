@@ -14,4 +14,18 @@
 > La caja para Raspberry Pi 5 NVMe es opcional, pero recomendada para una mejor refrigeración y protección del SSD NVMe.
 
 ### Instalación de Raspberry Pi OS
-Para comenzar con la instalación de Raspberry Pi OS, instalaremos Raspberry Pi Imager en nuestro sistema operativo. Para ello, accedemos a la [página oficial](https://www.raspberrypi.org/software/)   de Raspberry Pi Imager y descargamos el programa según nuestro sistema operativo.   
+Para comenzar con la instalación de Raspberry Pi OS, instalaremos Raspberry Pi Imager en nuestro sistema operativo. Para ello, accedemos a la [página oficial](https://www.raspberrypi.org/software/)   de Raspberry Pi Imager y descargamos el programa según nuestro sistema operativo.
+
+<details>
+<summary>Configuración Imagen Raspberry Pi OS</summary>
+<br>
+
+1. Seleccionamos la opción de "Choose Device"  y elegimos la opción de Raspberry Pi 5.
+2. Seleccionamos la opción de "Choose OS" y elegimos la opción de Raspberry Pi OS. (Raspberry Pi OS [Con interfaz gráfica] o Raspberry Pi OS Lite [Sin interfaz gráfica]) en este caso seleccionaremos la versión con interfaz gráfica.
+    - En el caso de tener una raspberry pi 5 de 8GB, se recomienda instalar la versión de 64 bits.
+    - En el caso de tener una raspberry pi 5 de 4GB, se recomienda instalar la versión de 32 bits.
+3. Seleccionamos la opción de "Choose Storage" y elegimos la tarjeta microSD que vamos a utilizar.
+
+
+
+</details>
