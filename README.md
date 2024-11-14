@@ -42,10 +42,30 @@ Tras conectar la Raspberry Pi a la corriente y a la red mediante un cable ethern
 ```bash
 ping -4 raspberrypi.local
 ```
-2. Una vez obtenida la dirección IP, accederemos mediante SSH con el siguiente comando.
+2. Una vez obtenida la dirección IP, accederemos mediante **SSH** con el siguiente comando.
 ```bash
 ssh usuario@ipRaspberry
 # Confirmamos la conexión con "yes" y escribimos la contraseña que hemos configurado en la instalación.
 ```
 </details>
+<details>
+<summary>Configurar parámetros de la Raspberry Pi</summary>
+<br>
 
+- Para abrir la configuración de la Raspberry Pi, ejecutaremos el siguiente comando.
+```bash
+sudo raspi-config
+```
+```bash
+1. APARTADO [6 Advanced Options] > [A1 Expand Filesystem] > FINISH
+2. APARTADO [1 System Options] > [S5 Boot / Auto Login] > [B1 Desktop / CLI] > [B4 Desktop Autologin] > FINISH
+3. APARTADO [3 Interface Options] > [I2 VNC] > [YES] > FINISH
+4. APARTADO [2 Display Options] > [D3 VNC resolution] > [1280x720] > FINISH
+5. APARTADO [5 Localisation Options] > [L1 Locale] > [es_ES.UTF-8 UTF-8] > [es_ES.UTF-8] > [OK] > [es_ES.UTF-8] > [OK] > [es_ES.UTF-8] > [OK]
+6. APARTADO [5 Localisation Options] > [L2 Timezone] > [Europe] > [Madrid] > FINISH
+7. APARTADO [5 Keyboard] > ENTER
+8. APARTADO [5 WLAN Country] > [ES Spain] > FINISH
+------------------------------------------------------------------------------------------------------------------------------------------------
+FINISH > REBOOT
+```
+</details>
