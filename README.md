@@ -10,4 +10,5 @@
 
 > [!NOTE]
 > Cabe destacar que tanto el modelo de 8GB, como el SSD NVMe son opcionales, pero recomendados para un mejor rendimiento y duarabilidad.
+> 
 > La caja para Raspberry Pi 5 NVMe es opcional, pero recomendada para una mejor refrigeración y protección del SSD NVMe.
