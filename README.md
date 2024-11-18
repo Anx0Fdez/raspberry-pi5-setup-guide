@@ -104,3 +104,45 @@ ssh usuario@ipRaspberry # Iniciamos de nuevo sesión por SSH con la nueva ip est
 sudo apt update
 sudo apt full-upgrade
 ```
+## Servicios PI5
+Para instalar cualquier servicio en la Raspberry Pi 5, usaremos `docker`. Ya que es una herramienta que nos permite instalar servicios de forma rápida, sencilla y segura. [*documentación oficial*](https://docs.docker.com/engine/install/debian/)
+### Instalación de Docker
+Pen primer lugar instalaremos docker y docker-compose en la Raspberry Pi 5.
+```bash
+sudo curl -fsSL https://get.docker.com/ -o get-docker.sh
+sudo sh get-docker.sh
+```
+Añadir nuestro usuario al grupo Docker y reiniciar la Raspberry Pi para aplicar los cambios.
+```bash
+sudo usermod -aG docker ${USER}
+sudo reboot
+```
+*Ejecutar un contenedor de prueba:*
+
+`docker run hello-world`   -- Creamos un contenedor de prueba para comprobar que docker está instalado correctamente.
+
+`docker ps -a` -- Listamos los contenedores que tenemos en ejecución y comprobamos que el contenedor de prueba se ha ejecutado correctamente.
+
+<details>
+<summary style="font-size: 1.3em;">Instalar Portainer para gestionar Docker mediante una interfaz gráfica.</summary>
+<br>
+Crear volumen Docker que contendrá los datos gestionados por el servidor Portainer.
+
+```bash
+docker volume create portainer_data
+```
+Descargar e instalar contenedor Portainer.
+```bash
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+Ver contenedores instalados: `docker ps`
+
+Finalmente, para acceder a Portainer, abriremos el navegador y accederemos mediante la siguiente URL: `https://[IP de tu Raspberry Pi]:9443`
+
+
+
+</details>
+
+
+
+
