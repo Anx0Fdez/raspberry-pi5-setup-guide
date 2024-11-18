@@ -141,11 +141,9 @@ Finalmente, para acceder a Portainer, abriremos el navegador y accederemos media
 </details>
 
 ## Servicios PI5
-> [!TIP]
-> Instalar Pi-Hole (Servidor DNS) [🔗](https://youtu.be/hXs9Cmzg1bY?si=Ny3Gx1x02Oh1uB3a&t=204)
-> Instalar WireGuard (VPN) [🔗](https://youtu.be/hXs9Cmzg1bY?si=Ny3Gx1x02Oh1uB3a&t=204)
-
-
-
+> [!Services]
+> - Instalar Pi-Hole (Servidor DNS) [🔗](https://youtu.be/hXs9Cmzg1bY?si=Ny3Gx1x02Oh1uB3a&t=204)
+> - Instalar WireGuard (VPN) [🔗](https://youtu.be/hXs9Cmzg1bY?si=Ny3Gx1x02Oh1uB3a&t=204)
+> - Instalar DuckDNS (DNS Dinámico) [🔗](https://youtu.be/hXs9Cmzg1bY?si=JswBKuOG0TYUQhYc&t=635)
 
 
