@@ -104,7 +104,7 @@ ssh usuario@ipRaspberry # Iniciamos de nuevo sesión por SSH con la nueva ip est
 sudo apt update
 sudo apt full-upgrade
 ```
-## Servicios PI5
+## Instalación de Servicios mediante Docker
 Para instalar cualquier servicio en la Raspberry Pi 5, usaremos `docker`. Ya que es una herramienta que nos permite instalar servicios de forma rápida, sencilla y segura. [*documentación oficial*](https://docs.docker.com/engine/install/debian/)
 ### Instalación de Docker
 Pen primer lugar instalaremos docker y docker-compose en la Raspberry Pi 5.
@@ -138,10 +138,13 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 Ver contenedores instalados: `docker ps`
 
 Finalmente, para acceder a Portainer, abriremos el navegador y accederemos mediante la siguiente URL: `https://[IP de tu Raspberry Pi]:9443`
-
-
-
 </details>
+
+## Servicios PI5
+> [!TIP]
+> Instalar Pi-Hole (Servidor DNS) [🔗](https://youtu.be/hXs9Cmzg1bY?si=Ny3Gx1x02Oh1uB3a&t=204)
+> Instalar WireGuard (VPN) [🔗](https://youtu.be/hXs9Cmzg1bY?si=Ny3Gx1x02Oh1uB3a&t=204)
+
 
 
 
