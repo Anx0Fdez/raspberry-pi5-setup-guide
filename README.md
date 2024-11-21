@@ -106,7 +106,7 @@ sudo apt full-upgrade
 ```
 
 > [!CAUTION]
-> En el caso de poseer una caja para alojar la raspberry pi 5, es común tener que realizar un proceso de instalación de controladores para que el ventilador de esta funcione correctamente. Las instrucciones para la instalación de estes vendrán en la caja en la propia caja del producto.
+> En el caso de poseer una caja para alojar la raspberry pi 5, es común tener que realizar un proceso de instalación de controladores para que el ventilador de esta funcione correctamente. Las instrucciones para la instalación de estes, vendrán en la caja en la propia caja del producto.
 
 
 ## Instalación de Servicios mediante Docker
