@@ -104,6 +104,11 @@ ssh usuario@ipRaspberry # Iniciamos de nuevo sesión por SSH con la nueva ip est
 sudo apt update
 sudo apt full-upgrade
 ```
+
+> [!CAUTION]
+> En el caso de poseer una caja para alojar la raspberry pi 5, es común tener que realizar un proceso de instalación de controladores para que el ventilador de esta funcione correctamente. Las instrucciones para la instalación de estes vendrán en la caja en la propia caja del producto.
+
+
 ## Instalación de Servicios mediante Docker
 Para instalar cualquier servicio en la Raspberry Pi 5, usaremos `docker`. Ya que es una herramienta que nos permite instalar servicios de forma rápida, sencilla y segura. [*documentación oficial*](https://docs.docker.com/engine/install/debian/)
 ### Instalación de Docker
